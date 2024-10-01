@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style type="text/css">
+    #banner {
+        align-items:center;
+        justify-content:center;
+    }
+    .product{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .product img{
+        width:100px;
+    }
+    .product-details{
+        flex-grow:1;
+        margin-left:20px;
+
+    }
+    .product-price{
+        font-weight: bold;
+        color:red;
+    }
+    .quantity{
+        display: flex;
+        align-items:center;
+    }
+    .quantity input{
+        width:50px;
+        text-align: center;
+    }
+    .total-section{
+        display:flex;
+        justify-content:space-between;
+        margin-top:20px;
+        padding-top:10px;
+
+    }
+</style>
+
+
+
+<section id="banner">
+    <div class="banner-content">
+        <h1>
+            Giỏ hàng
+        </h1>
+        <div class="product">
+            <p>
+                GIA DỤNG VIỆT
+            </p>
+            <img src="~/Content/image/iphone.jpg" />
+        </div>
+        <div class="product-details">
+            <h4>
+                Điện thoại iphone 16 128GB
+            </h4>
+        </div>
+        <div class="quatity">
+             <button>
+                 -
+             </button>
+            <input type="number" value="0" max="10"/>
+            <button>
+                +
+            </button>  
+        </div>
+        <div class="product-price">8.480.000đ</div>
+    </div>
+    <div class="product">
+        <p>
+            Tiki trending
+        </p>
+        <img src="~/Content/image/iphone16.jpg" />
+        <div class="product-details">
+            <h4>
+                Điện thoại iphone 16 268GB
+            </h4>
+        </div>
+        <div class="quatity">
+            <button>
+                -
+            </button>
+            <input type="number" value="1" min="1" />
+            <button>
+                +
+            </button>
+        </div>
+        <div class="product-price">8.990.000đ</div>
+    </div>   
+    <div class="total-section">
+        <div>
+            Phí vận chuyển: <strong>FREESHIP</strong>
+        </div>
+        <div class="total-price">
+            Tổng tiền 8.480.000đ
+        </div>
+    </div>
+    <button class="checkout-btn">Mua hàng</button>>
+</section>
+
